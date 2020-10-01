@@ -12,7 +12,7 @@ app.use(express.static("client/build"));
 
 app.use(routes);
 
-//test new branch in Git
+//test new branch in Git part 2
 
 /*
 mongoose.connect( process.env.MONGODB_URI, {
