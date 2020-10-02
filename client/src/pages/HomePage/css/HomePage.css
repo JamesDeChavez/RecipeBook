@@ -1,0 +1,16 @@
+.flexbox-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+
+.card{
+  width: 24vw;
+}
+
+.homePage > h3{
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
