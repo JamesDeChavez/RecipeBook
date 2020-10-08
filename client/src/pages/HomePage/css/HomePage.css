@@ -1,16 +1,93 @@
-.flexbox-container{
+.homePage > .body{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center;
-  row-gap: 1rem;
-  padding: 1rem;
+  grid-column-gap: 5em;
+  align-items: start;
+  justify-content: center;
+  grid-template-columns: 1fr 2fr;
+  width: 960px;
+  margin: auto;
+  padding-top: 80px;
 }
 
-.card{
-  width: 24vw;
+@media only screen and (max-width: 960px){
+  .homePage > .body{
+    width: 100%;
+    padding: 0 2vw;
+    padding-top: 80px;
+  }
 }
 
-.homePage > h3{
-  margin-left: 1rem;
-  margin-top: 1rem;
+.filtersColumn{
+  position: sticky;
+  top: 80px;
+}
+
+.filtersColumn > h4{
+  margin-bottom: 1em;
+}
+
+.filterButtons{
+  display: grid;
+  grid-gap: 1em;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1em 0;
+}
+
+.filterGrouping > p{
+  text-align: center;
+  margin: 0;
+}
+
+.filterImage{
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+}
+
+.filterImage:hover{
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.recipesColumn{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2em;
+}
+
+.recipeImage{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.recipeDiv{
+  padding: 1em;
+  border: 1px #E0E0E0 solid;
+  border-radius: 20px;
+  background-color: #F5F5F5;
+  color: #18181b;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 16px;
+}
+
+.recipeDiv:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 26px;
+}
+
+.recipeLink{
+  color: black;
+}
+
+.recipeLink:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.recipeDiv > p:last-child{
+  margin-bottom: 0;
 }

@@ -1,0 +1,42 @@
+.recipePage > .body{
+  padding: 1em 5vw;
+}
+
+.recipePage > .body > h3{
+  border-bottom: 1px solid black;
+  padding-top: 5px;
+}
+
+.player-wrapper{
+  position: relative;
+  padding-top: 56.25%;
+  margin: 1em;
+}
+
+.react-player{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.player-max{
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  max-height: 563px;
+}
+
+.recipePage > .body > .card{
+  margin: 1em;
+  max-width: 1000px;
+}
+
+.instructions, .ingredients{
+  color: #1b1e21;
+  background-color: #c6c8ca;
+}
+
+.orderButton, .editButton{
+  margin-left: 1em;
+  margin-bottom: 1em;
+}

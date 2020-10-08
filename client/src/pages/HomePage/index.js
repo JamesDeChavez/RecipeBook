@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar'
 import Footer from '../../components/Footer'
 import './css/HomePage.css'
@@ -8,92 +9,110 @@ const HomePage = (props) => {
   return(
     <div className="homePage">
       <NavBar />
-      <h3>My Recipes:</h3>
-      <div className="flexbox-container">
-        <div className="card">
-          <img src="https://i.ytimg.com/vi/8YyrzyqhaO0/maxresdefault.jpg" className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Moo Goo Gai Pan</h5>
-            <p className="card-text">Main Ingredients: Chicken, Mushrooms, Carrots, Snow Peas</p>
-            <p className="card-text">Calories: 500 per serving</p>
-            <p className="card-text">Protein: 40g per serving</p>
-            <p className="card-text">Carbs: 40g per serving</p>
-            <p className="card-text">Fat: 40g per serving</p>
-            <a href="#" className="btn btn-primary">View Recipe</a>
+      <div className='body'>
+
+        <div className='filtersColumn'>
+          <h4>Recipe Filters:</h4>
+          <div className='filterButtons'>
+            <div className='filterGrouping'>
+              <Link className='filterLink' to='/'>
+                <img src='/images/chicken.png' className='filterImage' />
+              </Link>
+              <p>Chicken</p>
+            </div>
+            <div className='filterGrouping'>
+              <Link className='filterLink' to='/'>
+                <img src='/images/chicken.png' className='filterImage' />
+              </Link>
+              <p>Chicken</p>
+            </div>
+            <div className='filterGrouping'>
+              <Link className='filterLink' to='/'>
+                <img src='/images/chicken.png' className='filterImage' />
+              </Link>
+              <p>Chicken</p>
+            </div>
+            <div className='filterGrouping'>
+              <Link className='filterLink' to='/'>
+                <img src='/images/chicken.png' className='filterImage' />
+              </Link>
+              <p>Chicken</p>
+            </div>
+            <div className='filterGrouping'>
+              <Link className='filterLink' to='/'>
+                <img src='/images/chicken.png' className='filterImage' />
+              </Link>
+              <p>Chicken</p>
+            </div>
+            <div className='filterGrouping'>
+              <Link className='filterLink' to='/'>
+                <img src='/images/chicken.png' className='filterImage' />
+              </Link>
+              <p>Chicken</p>
+            </div>
+            <div className='filterGrouping'>
+              <Link className='filterLink' to='/'>
+                <img src='/images/chicken.png' className='filterImage' />
+              </Link>
+              <p>Chicken</p>
+            </div>
+
+
           </div>
         </div>
-        <div className="card">
-          <img src="https://i.ytimg.com/vi/8YyrzyqhaO0/maxresdefault.jpg" className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Moo Goo Gai Pan</h5>
-            <p className="card-text">Main Ingredients: Chicken, Mushrooms, Carrots, Snow Peas</p>
-            <p className="card-text">Calories: 500 per serving</p>
-            <p className="card-text">Protein: 40g per serving</p>
-            <p className="card-text">Carbs: 40g per serving</p>
-            <p className="card-text">Fat: 40g per serving</p>
-            <a href="#" className="btn btn-primary">View Recipe</a>
-          </div>
+
+        <div className='recipesColumn'>
+          <Link className='recipeLink' to='/recipe'>
+            <div className='recipeDiv'>
+              <img
+                src="https://i.ytimg.com/vi/8YyrzyqhaO0/maxresdefault.jpg"
+                className='recipeImage'
+                alt="RecipeImage"
+              />
+            <h4>Moo Goo Gai Pan</h4>
+            <p>Main Ingredients: Chicken, Mushrooms, Carrots, Snow Peas</p>
+            <p>Calories: 500 kcal, Protein: 40g, Carbs: 200g, Fat: 40g</p>
+            </div>
+          </Link>
+          <Link className='recipeLink' to='/recipe'>
+            <div className='recipeDiv'>
+              <img
+                src="https://i.ytimg.com/vi/8YyrzyqhaO0/maxresdefault.jpg"
+                className='recipeImage'
+                alt="RecipeImage"
+              />
+            <h4>Moo Goo Gai Pan</h4>
+            <p>Main Ingredients: Chicken, Mushrooms, Carrots, Snow Peas</p>
+            <p>Calories: 500 kcal, Protein: 40g, Carbs: 200g, Fat: 40g</p>
+            </div>
+          </Link>
+          <Link className='recipeLink' to='/recipe'>
+            <div className='recipeDiv'>
+              <img
+                src="https://i.ytimg.com/vi/8YyrzyqhaO0/maxresdefault.jpg"
+                className='recipeImage'
+                alt="RecipeImage"
+              />
+            <h4>Moo Goo Gai Pan</h4>
+            <p>Main Ingredients: Chicken, Mushrooms, Carrots, Snow Peas</p>
+            <p>Calories: 500 kcal, Protein: 40g, Carbs: 200g, Fat: 40g</p>
+            </div>
+          </Link>
+          <Link className='recipeLink' to='/recipe'>
+            <div className='recipeDiv'>
+              <img
+                src="https://i.ytimg.com/vi/8YyrzyqhaO0/maxresdefault.jpg"
+                className='recipeImage'
+                alt="RecipeImage"
+              />
+            <h4>Moo Goo Gai Pan</h4>
+            <p>Main Ingredients: Chicken, Mushrooms, Carrots, Snow Peas</p>
+            <p>Calories: 500 kcal, Protein: 40g, Carbs: 200g, Fat: 40g</p>
+            </div>
+          </Link>
+
         </div>
-        <div className="card">
-          <img src="https://i.ytimg.com/vi/8YyrzyqhaO0/maxresdefault.jpg" className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Moo Goo Gai Pan</h5>
-            <p className="card-text">Main Ingredients: Chicken, Mushrooms, Carrots, Snow Peas</p>
-            <p className="card-text">Calories: 500 per serving</p>
-            <p className="card-text">Protein: 40g per serving</p>
-            <p className="card-text">Carbs: 40g per serving</p>
-            <p className="card-text">Fat: 40g per serving</p>
-            <a href="#" className="btn btn-primary">View Recipe</a>
-          </div>
-        </div>
-        <div className="card">
-          <img src="https://i.ytimg.com/vi/8YyrzyqhaO0/maxresdefault.jpg" className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Moo Goo Gai Pan</h5>
-            <p className="card-text">Main Ingredients: Chicken, Mushrooms, Carrots, Snow Peas</p>
-            <p className="card-text">Calories: 500 per serving</p>
-            <p className="card-text">Protein: 40g per serving</p>
-            <p className="card-text">Carbs: 40g per serving</p>
-            <p className="card-text">Fat: 40g per serving</p>
-            <a href="#" className="btn btn-primary">View Recipe</a>
-          </div>
-        </div>
-        <div className="card">
-          <img src="https://i.ytimg.com/vi/8YyrzyqhaO0/maxresdefault.jpg" className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Moo Goo Gai Pan</h5>
-            <p className="card-text">Main Ingredients: Chicken, Mushrooms, Carrots, Snow Peas</p>
-            <p className="card-text">Calories: 500 per serving</p>
-            <p className="card-text">Protein: 40g per serving</p>
-            <p className="card-text">Carbs: 40g per serving</p>
-            <p className="card-text">Fat: 40g per serving</p>
-            <a href="#" className="btn btn-primary">View Recipe</a>
-          </div>
-        </div>
-        <div className="card">
-          <img src="https://i.ytimg.com/vi/8YyrzyqhaO0/maxresdefault.jpg" className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Moo Goo Gai Pan</h5>
-            <p className="card-text">Main Ingredients: Chicken, Mushrooms, Carrots, Snow Peas</p>
-            <p className="card-text">Calories: 500 per serving</p>
-            <p className="card-text">Protein: 40g per serving</p>
-            <p className="card-text">Carbs: 40g per serving</p>
-            <p className="card-text">Fat: 40g per serving</p>
-            <a href="#" className="btn btn-primary">View Recipe</a>
-          </div>
-        </div>
-        <div className="card">
-          <img src="https://i.ytimg.com/vi/8YyrzyqhaO0/maxresdefault.jpg" className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Moo Goo Gai Pan</h5>
-            <p className="card-text">Main Ingredients: Chicken, Mushrooms, Carrots, Snow Peas</p>
-            <p className="card-text">Calories: 500 per serving</p>
-            <p className="card-text">Protein: 40g per serving</p>
-            <p className="card-text">Carbs: 40g per serving</p>
-            <p className="card-text">Fat: 40g per serving</p>
-            <a href="#" className="btn btn-primary">View Recipe</a>
-          </div>
-        </div>
+
       </div>
       <Footer />
     </div>
